@@ -20,28 +20,17 @@ const styles = StyleSheet.create({
 const Exercise3D = () => {
     return (
         <View style={styles.parent}>
-            <View
-                style={[styles.child, {backgroundColor: 'powderblue', flex: 1,},]}>
-                <Text style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, {backgroundColor: 'powderblue', flex: 1,},]}>
                     Child One
-                </Text>
-            </View>
+            </Text>
 
-            <View
-                style={[
-                    styles.child, {backgroundColor: 'skyblue', flex: 2,}]}>
-                <Text style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, {backgroundColor: 'skyblue', flex: 2,}]}>
                     Child Two
-                </Text>
-            </View>
+            </Text>
 
-            <View
-                style={[styles.child, {backgroundColor: 'steelblue', flex: 3}]}>
-                <Text
-                    style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize}}>
+            <Text style={[styles.child, {backgroundColor: 'steelblue', flex: 3}]}>
                     Child Three
-                </Text>
-            </View>
+            </Text>
         </View>
     );
 };

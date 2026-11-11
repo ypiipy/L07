@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     parent: {
         flex: 1,
-        flexDirection: 'horizontal',
+        flexDirection: 'column',
         backgroundColor: '#F5fcff',
         borderColor: '#0099AA',
         borderWidth: 5,
@@ -21,27 +21,17 @@ const styles = StyleSheet.create({
 const Exercise3C = () => {
     return (
         <View style={styles.parent}>
-            <View style={[styles.child, {backgroundColor: 'powderblue', maxWidth: 90}]}>
-                <Text
-                    style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize}}>
+            <Text style={[styles.child, {backgroundColor: 'powderblue', maxWidth: 90}]}>
                     Child One
-                </Text>
-            </View>
+            </Text>
 
-            <View
-                style={[styles.child, {backgroundColor: 'skyblue'}]}>
-                <Text
-                    style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, {backgroundColor: 'skyblue'}]}>
                     Child Two
-                </Text>
-            </View>
+            </Text>
 
-            <View style={[styles.child, {backgroundColor: 'steelblue', maxHeight: 120}]}>
-                <Text
-                    style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, {backgroundColor: 'steelblue', maxHeight: 120}]}>
                     Child Three
-                </Text>
-            </View>
+            </Text>
         </View>
     );
 };

@@ -3,14 +3,14 @@ import {View, Text, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     parent: {
-        flex: 1,
-        flexDirection: 'horizontal',
+        flex:1,
+        flexDirection: 'column',
         backgroundColor: '#F5fcff',
         borderColor: '#0099AA',
         borderWidth: 5,
     },
     child: {
-        flex: 1,
+        flex:1,
         borderWidth: 2,
         textAlign: 'center',
         fontSize: 24,
@@ -20,24 +20,17 @@ const styles = StyleSheet.create({
 const Exercise3B = () => {
     return (
         <View style={styles.parent}>
-            <View style={[styles.child, { backgroundColor: 'powderblue' }]}>
-                <Text
-                    style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, { backgroundColor: 'powderblue' }]}>
                     Child One
                 </Text>
-            </View>
 
-            <View style={[styles.child, { backgroundColor: 'skyblue' }]}>
-                <Text style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, { backgroundColor: 'skyblue' }]}>
                     Child Two
                 </Text>
-            </View>
 
-            <View style={[styles.child, { backgroundColor: 'steelblue' }]}>
-                <Text style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, { backgroundColor: 'steelblue' }]}>
                     Child Three
                 </Text>
-            </View>
         </View>
     );
 };

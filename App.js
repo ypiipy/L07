@@ -12,7 +12,7 @@ import Exercise4 from "./Exercise4";
 const L07App = () => {
     return (
         <ScrollView>
-        <View style={{marginTop: 30, flex: 1}}>
+        <View style={{marginTop: 30}}>
             <Text style={{fontSize:30}}>EXERCISE 1</Text>
             <Exercise1 />
 

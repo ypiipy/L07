@@ -19,24 +19,17 @@ const styles = StyleSheet.create({
 const Exercise3A = () => {
     return (
         <View style={styles.parent}>
-            <View style={[styles.child, { backgroundColor: 'powderblue' }]}>
-                <Text
-                    style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, { backgroundColor: 'powderblue' }]}>
                     Child One
-                </Text>
-            </View>
+            </Text>
 
-            <View style={[styles.child, { backgroundColor: 'skyblue' }]}>
-                <Text style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, { backgroundColor: 'skyblue' }]}>
                     Child Two
                 </Text>
-            </View>
 
-            <View style={[styles.child, { backgroundColor: 'steelblue' }]}>
-                <Text style={{textAlign: styles.child.textAlign, fontSize: styles.child.fontSize,}}>
+            <Text style={[styles.child, { backgroundColor: 'steelblue' }]}>
                     Child Three
-                </Text>
-            </View>
+            </Text>
         </View>
     );
 };
